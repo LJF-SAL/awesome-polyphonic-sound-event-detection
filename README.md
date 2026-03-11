@@ -1,47 +1,88 @@
 # Awesome Polyphonic Sound Event Detection
 
-Curated reading list for **Polyphonic Sound Event Detection (Polyphonic SED)** methods, focused on the **DESED** dataset (DCASE Task 4).
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![GitHub stars](https://img.shields.io/github/stars/LJF-SAL/awesome-polyphonic-sound-event-detection?style=social)
+
+Curated reading list for **Polyphonic Sound Event Detection (Polyphonic SED)** methods, focused on the **DESED** dataset (DCASE Task 4). Organized by pipeline stages: Frontend → Model Architectures → Data Utilization → Post-processing.
 
 **Last updated**: March 2026
+
+Inspired by [soham97/awesome-sound_event_detection](https://github.com/soham97/awesome-sound_event_detection) (narrowed and restructured for DESED-specific methods).
 
 ## Table of Contents
 - [Awesome Polyphonic Sound Event Detection](#awesome-polyphonic-sound-event-detection)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Frontend](#frontend)
+  - [Survey Papers](#survey-papers)
+  - [Datasets \& Benchmarks](#datasets--benchmarks)
+  - [Frontend / Acoustic Features](#frontend--acoustic-features)
   - [Model Architectures](#model-architectures)
     - [CNN-based](#cnn-based)
-    - [Transformer-based](#transformer-based)
-    - [Hybird](#hybird)
+    - [Pre-trained Models Fine-tuning](#pre-trained-models-fine-tuning)
+    - [Transformer / Attention-based](#transformer--attention-based)
+    - [Other Network Improvements](#other-network-improvements)
   - [Data Utilization](#data-utilization)
-    - [Semi-supervised / Weakly-supervised](#semi-supervised--weakly-supervised)
-  - [Post-processing](#post-processing)
+    - [Weakly/Semi-supervised Learning](#weaklysemi-supervised-learning)
+    - [Data Augmentation](#data-augmentation)
+  - [Post-processing \& Inference](#post-processing--inference)
+  - [DCASE Workshops \& Leaderboards](#dcase-workshops--leaderboards)
   - [License](#license)
 
 ## Introduction
-This list reorganizes Sound Event Detection research strictly around the DESED pipeline: frontend features → model architectures → data utilization → post-processing.
+This list is dedicated to researchers working on polyphonic SED with the DESED dataset. We categorize papers and resources strictly by system pipeline for easy navigation.
 
-Inspired by [soham97/awesome-sound_event_detection](https://github.com/soham97/awesome-sound_event_detection).
+## Survey Papers
+- **[Sound Event Detection: A Tutorial](https://ieeexplore.ieee.org/document/9524590)** (2021) - IEEE Signal Processing Magazine  
 
-## Frontend
-- Standard: Log-Mel Spectrogram
+## Datasets & Benchmarks
+| Dataset | Year | # Classes | Duration | Annotation Type | Link |
+|---------|------|-----------|----------|-----------------|------|
+| DESED   | 2019+ | 10        |  | Strong/Weak/Unlabel     | [Official](https://project.inria.fr/desed/) |
+| MAESTRO-Real | 2023 | 10+       |  | Soft Label      | [Paper](https://arxiv.org/abs/2305.12345) |
+
+## Frontend / Acoustic Features
+Mostly Log-Mel
 
 ## Model Architectures
-### CNN-based
-- ...
-### Transformer-based
-- ...
-### Hybird
-- ...
-## Data Utilization
-### Semi-supervised / Weakly-supervised
-- ...
 
-## Post-processing
-- Median Filtering
-- ...
+### CNN-based
+- **[Frequency Dynamic Convolution](https://dcase.community/challenge2020/task-sound-event-detection-in-domestic-environments/results)** (Interspeech 2022)  - [Code](https://github.com/frednam93/FDY-SED)
+- **[Multi-Dimensional Frequency Dynamic Convolution](https://ieeexplore.ieee.org/document/10096306/)** (ICASSP 2023)  
+- **[Frequency-aware Fourier Filter](https://ieeexplore.ieee.org/document/10889813)**(ICASSP 2025)
+- **[Frequency & Channel Attention](https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Nam_32.pdf)**(DCASE WorkShop 2023)
+- **[Frequency-aware Convolution](https://link.springer.com/chapter/10.1007/978-981-96-2054-8_31)**(MMM 2025)
+- **[Diversifying and Expanding Frequency-Adaptive Convolution](https://www.isca-archive.org/interspeech_2024/nam24_interspeech.html)**(Interspeech 2024)
+- **[Dynamic Attention-Asymmetric Perceptron Network](https://ieeexplore.ieee.org/document/11340695)**(TASLP 2026)
+- **[Multi-Dilated Frequency Dynamic Convolution](https://arxiv.org/abs/2406.13312)**(arxiv 2024)
+- **[Temporal Attention Pooling](https://arxiv.org/abs/2504.12670)**(arxiv 2025)
+
+### Pre-trained Models Fine-tuning
+
+### Transformer / Attention-based
+
+
+### Other Network Improvements
+
+
+## Data Utilization
+
+### Weakly/Semi-supervised Learning
+
+
+### Data Augmentation
+
+
+## Post-processing & Inference
+- **[Sound Event Bounding Boxes](https://www.isca-archive.org/interspeech_2024/ebbers24_interspeech.html)** (Interspeech 2024)  
+ 
+
+## DCASE Workshops & Leaderboards
+- [DESED Task Official Baselines](https://github.com/DCASE-REPO/DESED_task) - CRNN, Mean Teacher, etc. 
+
+- [DCASE 2024 Task 4 Leaderboard](https://dcase.community/challenge2024/task-sound-event-detection-with-heterogeneous-training-dataset-and-potentially-missing-labels-results)  
+- [DCASE 2023 TASK 4A Leaderboard](https://dcase.community/challenge2023/task-sound-event-detection-with-weak-labels-and-synthetic-soundscapes-results)
+
+- [DCASE 2022 TASK 4 Leaderboard](https://dcase.community/challenge2022/task-sound-event-detection-in-domestic-environments-results)
 
 ## License
-MIT License
-
-See the [LICENSE](LICENSE) file for details.
+MIT License - See the [LICENSE](LICENSE) file for details.
