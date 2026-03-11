@@ -62,7 +62,7 @@ Mostly Log-Mel
 
 ### Pre-trained Models Fine-tuning
 - **[AST-SED](https://ieeexplore.ieee.org/abstract/document/10096853)**(ICASSP 2023)
-- **[ASiT-CRNN](https://www.sciencedirect.com/science/article/abs/pii/S1051200425000776)**(Digital Signal Processing 2025)
+- **[ASiT-CRNN](https://www.sciencedirect.com/science/article/abs/pii/S1051200425000776)**(Digital Signal Processing, Accepted 2025)
 - **[PaSST-SED](https://www.isca-archive.org/interspeech_2023/li23n_interspeech.html)**(Interspeech 2023)
 - **[ATST-SED](https://ieeexplore.ieee.org/abstract/document/10446159)**(ICASSP 2024)
 - **[MTDA-HSED](https://ieeexplore.ieee.org/document/10889194)**(ICASSP 2025)
@@ -76,7 +76,11 @@ Mostly Log-Mel
 ## Data Utilization
 
 ### Weakly/Semi-supervised Learning
-
+- **[Random Consistency Training](https://www.isca-archive.org/interspeech_2022/shao22_interspeech.html)**(Interspeech 2022)
+- **[Resolution Consistency Training](https://www.isca-archive.org/interspeech_2023/choi23b_interspeech.html)**(Interspeech 2023)
+- **[Local and Global Consistency Regularization](https://ieeexplore.ieee.org/document/10446386/)**(ICASSP 2024)
+- **[Confidence-aware Mean Teacher](https://www.sciencedirect.com/science/article/abs/pii/S1051200424004196)**(Digital Signal Processing, Available 2024)
+- **[Dual Consistency Training](https://www.sciencedirect.com/science/article/abs/pii/S0925231226002778)**(Neurocomputing, Accepted 2026)
 
 ### Data Augmentation
 
