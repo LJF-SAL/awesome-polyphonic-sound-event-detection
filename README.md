@@ -19,8 +19,7 @@ Inspired by [soham97/awesome-sound_event_detection](https://github.com/soham97/a
   - [Model Architectures](#model-architectures)
     - [CNN-based](#cnn-based)
     - [Pre-trained Models Fine-tuning](#pre-trained-models-fine-tuning)
-    - [Transformer / Attention-based](#transformer--attention-based)
-    - [Other Network Improvements](#other-network-improvements)
+    - [Transformer](#transformer)
   - [Data Utilization](#data-utilization)
     - [Weakly/Semi-supervised Learning](#weaklysemi-supervised-learning)
     - [Data Augmentation](#data-augmentation)
@@ -31,6 +30,10 @@ Inspired by [soham97/awesome-sound_event_detection](https://github.com/soham97/a
 ## Introduction
 This list is dedicated to researchers working on polyphonic SED with the DESED dataset. We categorize papers and resources strictly by system pipeline for easy navigation.
 
+**Inclusion Criteria**:  
+- Papers are primarily sourced from high-impact conferences and journals like ICASSP, Interspeech, and TASLP, but we also include influential works from other SED-related venues (e.g., DCASE Workshops, IEEE Signal Processing Letters).  
+- Focus on papers published or accepted after 2022, with a few exceptional pre-2022 works for foundational contributions.
+  
 ## Survey Papers
 - **[Sound Event Detection: A Tutorial](https://ieeexplore.ieee.org/document/9524590)** (2021) - IEEE Signal Processing Magazine  
 
@@ -48,6 +51,7 @@ Mostly Log-Mel
 ### CNN-based
 - **[Frequency Dynamic Convolution](https://dcase.community/challenge2020/task-sound-event-detection-in-domestic-environments/results)** (Interspeech 2022)  - [Code](https://github.com/frednam93/FDY-SED)
 - **[Multi-Dimensional Frequency Dynamic Convolution](https://ieeexplore.ieee.org/document/10096306/)** (ICASSP 2023)  
+- **[Frequency Dynamic Convolution with Large Kernel Attention](https://arxiv.org/abs/2306.06461)** (arxiv 2023)  
 - **[Frequency-aware Fourier Filter](https://ieeexplore.ieee.org/document/10889813)**(ICASSP 2025)
 - **[Frequency & Channel Attention](https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Nam_32.pdf)**(DCASE WorkShop 2023)
 - **[Frequency-aware Convolution](https://link.springer.com/chapter/10.1007/978-981-96-2054-8_31)**(MMM 2025)
@@ -57,11 +61,16 @@ Mostly Log-Mel
 - **[Temporal Attention Pooling](https://arxiv.org/abs/2504.12670)**(arxiv 2025)
 
 ### Pre-trained Models Fine-tuning
+- **[AST-SED](https://ieeexplore.ieee.org/abstract/document/10096853)**(ICASSP 2023)
+- **[ASiT-CRNN](https://www.sciencedirect.com/science/article/abs/pii/S1051200425000776)**(Digital Signal Processing 2025)
+- **[PaSST-SED](https://www.isca-archive.org/interspeech_2023/li23n_interspeech.html)**(Interspeech 2023)
+- **[ATST-SED](https://ieeexplore.ieee.org/abstract/document/10446159)**(ICASSP 2024)
+- **[MTDA-HSED](https://ieeexplore.ieee.org/document/10889194)**(ICASSP 2025)
+- **[GE-FPT](https://ieeexplore.ieee.org/document/10889807)**(ICASSP 2025)
+- **[ATST-Conformer Dual-Branch](https://www.isca-archive.org/interspeech_2025/dai25_interspeech.html)**(Interspeech 2025)
 
-### Transformer / Attention-based
+### Transformer
 
-
-### Other Network Improvements
 
 
 ## Data Utilization
