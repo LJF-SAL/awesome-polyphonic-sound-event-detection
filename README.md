@@ -84,7 +84,9 @@ Mostly Log-Mel
 - **[Dual Consistency Training](https://www.sciencedirect.com/science/article/abs/pii/S0925231226002778)**(Neurocomputing, Accepted 2026)
 
 ### Data Augmentation
-
+- **[Heavily Augmented](https://arxiv.org/abs/2107.03649)**(arxiv, 2021)
+- **[Background Domain Switch](https://www.isca-archive.org/interspeech_2023/lin23_interspeech.html)**(Interspeech 2023)
+- **[DG-SED](https://ieeexplore.ieee.org/document/11249270)**(APSIPA ASC 2025)
 
 ## Post-processing & Inference
 - **[Sound Event Bounding Boxes](https://www.isca-archive.org/interspeech_2024/ebbers24_interspeech.html)** (Interspeech 2024)  
