@@ -70,7 +70,8 @@ Mostly Log-Mel
 - **[ATST-Conformer Dual-Branch](https://www.isca-archive.org/interspeech_2025/dai25_interspeech.html)**(Interspeech 2025)
 
 ### Transformer
-
+- **[MAT-SED](https://www.isca-archive.org/interspeech_2024/cai24_interspeech.html)**(Interspeech 2024)
+- **[JiTTER](https://arxiv.org/abs/2502.20857)**(arxiv 2025)
 
 
 ## Data Utilization
